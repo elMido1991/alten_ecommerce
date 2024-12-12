@@ -1,0 +1,6 @@
+rootProject.name = 'e-commerce'
+include 'discovery-server'
+include 'gateway-server'
+include 'authentication-server'
+include 'product-service'
+
