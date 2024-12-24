@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e031c5d5-b46e-42a9-a076-8e40bb7912b1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/ecom-common/src/main/java/ma/ecommerce/abstractions/AbstractCrudController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecom-common/src/main/java/ma/ecommerce/abstractions/AbstractCrudRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecom-common/src/main/java/ma/ecommerce/abstractions/AbstractCrudService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecom-common/src/main/java/ma/ecommerce/abstractions/AbstractDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecom-common/src/main/java/ma/ecommerce/abstractions/AbstractEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecom-common/src/main/java/ma/ecommerce/abstractions/AbstractMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecom-common/src/main/java/ma/ecommerce/config/MessageSourceConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecom-common/src/main/java/ma/ecommerce/exceptions/Describable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecom-common/src/main/java/ma/ecommerce/exceptions/EntityNotFoundInDBException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecom-common/src/main/resources/messages.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecom-common/src/main/resources/messages_fr.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecom-compliance/language-server/src/main/java/com/ecommerce/LanguageApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecom-compliance/language-server/src/main/java/com/ecommerce/business/entities/UserLocale.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecom-compliance/language-server/src/main/java/com/ecommerce/business/repositories/UserLocaleRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecom-compliance/language-server/src/main/java/com/ecommerce/business/services/LocaleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecom-compliance/language-server/src/main/java/com/ecommerce/controllers/LocaleConfigController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecom-compliance/language-server/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecom-compliance/language-server/src/main/resources/messages.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecom-compliance/language-server/src/main/resources/messages_fr.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecom-infrastructure/docker/ecom-compliance/compose-compliance.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecom-infrastructure/docker/ecom-sql-db/compose-postgres-db.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecom-products/product-service/src/main/java/com/ecommerce/business/exceptions/BusinessException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecom-products/product-service/src/main/java/com/ecommerce/business/exceptions/ExceptionCodes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication-server/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/ecom-security/authentication-server/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication-server/src/main/java/com/ecommerce/AuthServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecom-security/authentication-server/src/main/java/com/ecommerce/AuthServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication-server/src/main/java/com/ecommerce/business/db/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecom-security/authentication-server/src/main/java/com/ecommerce/business/db/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication-server/src/main/java/com/ecommerce/business/db/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecom-security/authentication-server/src/main/java/com/ecommerce/business/db/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication-server/src/main/java/com/ecommerce/business/exceptions/AuthException.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecom-security/authentication-server/src/main/java/com/ecommerce/business/exceptions/AuthException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication-server/src/main/java/com/ecommerce/business/exceptions/ErrorResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecom-products/product-service/src/main/java/com/ecommerce/business/exceptions/ErrorResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication-server/src/main/java/com/ecommerce/business/exceptions/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecom-security/authentication-server/src/main/java/com/ecommerce/business/exceptions/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication-server/src/main/java/com/ecommerce/business/services/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecom-security/authentication-server/src/main/java/com/ecommerce/business/services/AuthService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication-server/src/main/java/com/ecommerce/business/services/CustomUserDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecom-security/authentication-server/src/main/java/com/ecommerce/business/services/CustomUserDetailsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication-server/src/main/java/com/ecommerce/business/services/JwtAuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecom-security/authentication-server/src/main/java/com/ecommerce/business/services/JwtAuthenticationFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication-server/src/main/java/com/ecommerce/business/services/JwtTokenProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecom-security/authentication-server/src/main/java/com/ecommerce/business/services/JwtTokenProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication-server/src/main/java/com/ecommerce/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecom-security/authentication-server/src/main/java/com/ecommerce/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication-server/src/main/java/com/ecommerce/config/SwaggerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecom-products/product-service/src/main/java/com/ecommerce/config/SwaggerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication-server/src/main/java/com/ecommerce/gui/controllers/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecom-security/authentication-server/src/main/java/com/ecommerce/gui/controllers/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication-server/src/main/java/com/ecommerce/gui/dto/LoginRequestDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecom-security/authentication-server/src/main/java/com/ecommerce/gui/dto/LoginRequestDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication-server/src/main/java/com/ecommerce/gui/dto/SignUpRequestDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecom-security/authentication-server/src/main/java/com/ecommerce/gui/dto/SignUpRequestDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication-server/src/main/java/com/ecommerce/gui/dto/UserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecom-security/authentication-server/src/main/java/com/ecommerce/gui/dto/UserDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication-server/src/main/java/com/ecommerce/mappers/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecom-security/authentication-server/src/main/java/com/ecommerce/mappers/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ecom-security/authentication-server/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/discovery-server/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/ecom-compliance/registry-server/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/discovery-server/src/main/java/com/ecommerce/EurekaServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecom-compliance/registry-server/src/main/java/com/ecommerce/EurekaServerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/discovery-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ecom-compliance/registry-server/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-server/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/ecom-compliance/gateway-router/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-server/src/main/java/com/ecommerce/GatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecom-compliance/gateway-router/src/main/java/com/ecommerce/GatewayApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-server/src/main/java/com/ecommerce/config/AuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecom-compliance/gateway-router/src/main/java/com/ecommerce/config/AuthenticationFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-server/src/main/java/com/ecommerce/config/CorsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecom-compliance/gateway-router/src/main/java/com/ecommerce/config/CorsConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-server/src/main/java/com/ecommerce/config/WebClientConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecom-compliance/gateway-router/src/main/java/com/ecommerce/config/WebClientConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-server/src/main/java/com/ecommerce/controllers/AuthServiceClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecom-compliance/gateway-router/src/main/java/com/ecommerce/controllers/AuthServiceClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ecom-compliance/gateway-router/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/ecom-products/product-service/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/ecommerce/ProductServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecom-products/product-service/src/main/java/com/ecommerce/ProductServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/ecommerce/business/db/crudservices/BasketService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecom-products/product-service/src/main/java/com/ecommerce/business/db/crudservices/BasketService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/ecommerce/business/db/crudservices/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecom-products/product-service/src/main/java/com/ecommerce/business/db/crudservices/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/ecommerce/business/db/crudservices/WishlistService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecom-products/product-service/src/main/java/com/ecommerce/business/db/crudservices/WishlistService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/ecommerce/business/db/entity/Basket.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecom-products/product-service/src/main/java/com/ecommerce/business/db/entity/Basket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/ecommerce/business/db/entity/BasketProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecom-products/product-service/src/main/java/com/ecommerce/business/db/entity/BasketProduct.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/ecommerce/business/db/entity/BasketProductId.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecom-products/product-service/src/main/java/com/ecommerce/business/db/entity/BasketProductId.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/ecommerce/business/db/entity/InventoryStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecom-products/product-service/src/main/java/com/ecommerce/business/db/entity/InventoryStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/ecommerce/business/db/entity/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecom-products/product-service/src/main/java/com/ecommerce/business/db/entity/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/ecommerce/business/db/entity/Wishlist.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecom-products/product-service/src/main/java/com/ecommerce/business/db/entity/Wishlist.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/ecommerce/business/db/repository/BasketRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecom-products/product-service/src/main/java/com/ecommerce/business/db/repository/BasketRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/ecommerce/business/db/repository/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecom-products/product-service/src/main/java/com/ecommerce/business/db/repository/ProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/ecommerce/business/db/repository/WishlistRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecom-products/product-service/src/main/java/com/ecommerce/business/db/repository/WishlistRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/ecommerce/business/exceptions/BusinessException.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecom-common/src/main/java/ma/ecommerce/exceptions/AbstractBusinessException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/ecommerce/business/exceptions/EntityNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecom-products/product-service/src/main/java/com/ecommerce/business/exceptions/EntityNotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/ecommerce/business/exceptions/ErrorResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecom-security/authentication-server/src/main/java/com/ecommerce/business/exceptions/ErrorResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/ecommerce/business/exceptions/ExceptionCodes.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecom-common/src/main/java/ma/ecommerce/exceptions/AbstractExceptionCodes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/ecommerce/business/exceptions/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecom-products/product-service/src/main/java/com/ecommerce/business/exceptions/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/ecommerce/business/exceptions/ProductOutOfStockException.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecom-products/product-service/src/main/java/com/ecommerce/business/exceptions/ProductOutOfStockException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/ecommerce/business/exceptions/ProductPriceNegativeException.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecom-products/product-service/src/main/java/com/ecommerce/business/exceptions/ProductPriceNegativeException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/ecommerce/business/exceptions/ProductQuantityNegativeException.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecom-products/product-service/src/main/java/com/ecommerce/business/exceptions/ProductQuantityNegativeException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/ecommerce/business/exceptions/ProductRatingOutOfRangeException.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecom-products/product-service/src/main/java/com/ecommerce/business/exceptions/ProductRatingOutOfRangeException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/ecommerce/business/exceptions/WishListNotBelongToUserException.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecom-products/product-service/src/main/java/com/ecommerce/business/exceptions/WishListNotBelongToUserException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/ecommerce/config/SwaggerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecom-security/authentication-server/src/main/java/com/ecommerce/config/SwaggerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/ecommerce/gui/controllers/BasketController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecom-products/product-service/src/main/java/com/ecommerce/gui/controllers/BasketController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/ecommerce/gui/controllers/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecom-products/product-service/src/main/java/com/ecommerce/gui/controllers/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/ecommerce/gui/controllers/WishListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecom-products/product-service/src/main/java/com/ecommerce/gui/controllers/WishListController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/ecommerce/gui/dto/BasketItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecom-products/product-service/src/main/java/com/ecommerce/gui/dto/BasketItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/ecommerce/gui/dto/ProductDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecom-products/product-service/src/main/java/com/ecommerce/gui/dto/ProductDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/ecommerce/gui/dto/UserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecom-products/product-service/src/main/java/com/ecommerce/gui/dto/UserDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/ecommerce/gui/dto/WishListDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecom-products/product-service/src/main/java/com/ecommerce/gui/dto/WishListDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/ecommerce/gui/dto/WishListItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecom-products/product-service/src/main/java/com/ecommerce/gui/dto/WishListItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/ecommerce/gui/dto/validations/EnumValidation.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecom-products/product-service/src/main/java/com/ecommerce/gui/dto/validations/EnumValidation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/ecommerce/gui/dto/validations/EnumValidationValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecom-products/product-service/src/main/java/com/ecommerce/gui/dto/validations/EnumValidationValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/ecommerce/mappers/ProductMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecom-products/product-service/src/main/java/com/ecommerce/mappers/ProductMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/ecommerce/mappers/WishListMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecom-products/product-service/src/main/java/com/ecommerce/mappers/WishListMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ecom-products/product-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$/discovery-server">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/gateway-server">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/product-service">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/authentication-server">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/ecom-compliance/registry-server">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/ecom-common">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/ecom-compliance/gateway-router">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/ecom-compliance/language-server">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="e-commerce" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="e-commerce" type="f1a62948:ProjectNode" />
+                <item name="ecom-compliance" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="e-commerce" type="f1a62948:ProjectNode" />
+                <item name="ecom-compliance" type="2d1252cf:ModuleNode" />
+                <item name="language-server" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="e-commerce" type="f1a62948:ProjectNode" />
+                <item name="ecom-compliance" type="2d1252cf:ModuleNode" />
+                <item name="language-server" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="e-commerce" type="f1a62948:ProjectNode" />
+                <item name="ecom-compliance" type="2d1252cf:ModuleNode" />
+                <item name="language-server" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="jib" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2q81KlHzNlEbpd76ygyQMn0IFpZ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="false" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Docker.ecom-compliance/compose-compliance.yml.gateway-router: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.ecom-compliance/compose-compliance.yml.language-server: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.ecom-compliance/compose-compliance.yml.registry-server: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.ecom-compliance/compose-compliance.yml: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.ecom-compliance/gateway-router.yml.gateway-router: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.ecom-compliance/registry-server.yml.registry-router: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.alten_ecommerce [assemble].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.alten_ecommerce:authentication-server [bootRun].executor&quot;: &quot;Debug&quot;,
+    &quot;Gradle.alten_ecommerce:discovery-server [bootRun].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.alten_ecommerce:ecom-compliance:gateway-router [jibDockerBuild].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.alten_ecommerce:ecom-compliance:language-server [jibDockerBuild].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.alten_ecommerce:ecom-compliance:registry-server [bootRun].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.alten_ecommerce:ecom-compliance:registry-server [jibDockerBuild].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.alten_ecommerce:gateway-server [bootRun].executor&quot;: &quot;Debug&quot;,
+    &quot;Gradle.alten_ecommerce:product-service [bootRun].executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;develop&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_directory_selection&quot;: &quot;C:/projects_java/alten_ecommerce/ecom-compliance/language-server/src/main/java/com/ecommerce/business&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/projects_java/alten_ecommerce/ecom-infrastructure/docker/ecom-sql-db&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.ecommerce.gui.dto" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\projects_java\alten_ecommerce\ecom-infrastructure\docker\ecom-sql-db" />
+      <recent name="C:\projects_java\alten_ecommerce\ecom-compliance\language-server\src\main\resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\projects_java\alten_ecommerce\ecom-products" />
+      <recent name="C:\projects_java\alten_ecommerce\ecom-security" />
+      <recent name="C:\projects_java\alten_ecommerce\ecom-compliance" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.ecommerce.services" />
+      <recent name="com.ecommerce" />
+      <recent name="ma.ecommerce.exceptions" />
+      <recent name="ma.ecommerce.abstractions" />
+      <recent name="com.ecommerce.mappers" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Docker.ecom-compliance/compose-compliance.yml.language-server: Compose Deployment">
+    <configuration name="alten_ecommerce:ecom-compliance:language-server [jibDockerBuild]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/ecom-compliance/language-server" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="jibDockerBuild" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="alten_ecommerce" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="alten_ecommerce" />
+      <option name="filePath" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="ecom-compliance/compose-compliance.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="ecom-infrastructure/docker/ecom-compliance/compose-compliance.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="ecom-compliance/compose-compliance.yml.gateway-router: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="gateway-router" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="ecom-infrastructure/docker/ecom-compliance/compose-compliance.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="ecom-compliance/compose-compliance.yml.language-server: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="language-server" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="ecom-infrastructure/docker/ecom-compliance/compose-compliance.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="ecom-compliance/compose-compliance.yml.registry-server: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="registry-server" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="ecom-infrastructure/docker/ecom-compliance/compose-compliance.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Docker.ecom-compliance/compose-compliance.yml.language-server: Compose Deployment" />
+        <item itemvalue="Gradle.alten_ecommerce:ecom-compliance:language-server [jibDockerBuild]" />
+        <item itemvalue="Docker.ecom-compliance/compose-compliance.yml.gateway-router: Compose Deployment" />
+        <item itemvalue="Docker.ecom-compliance/compose-compliance.yml: Compose Deployment" />
+        <item itemvalue="Docker.ecom-compliance/compose-compliance.yml.registry-server: Compose Deployment" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e031c5d5-b46e-42a9-a076-8e40bb7912b1" name="Changes" comment="" />
+      <created>1734029327590</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1734029327590</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ecom-products/product-service/src/main/java/com/ecommerce/business/db/crudservices/BasketService.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ecom-products/product-service/src/main/java/com/ecommerce/gui/controllers/WishListController.java</url>
+          <line>72</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ecom-products/product-service/src/main/java/com/ecommerce/gui/controllers/WishListController.java</url>
+          <line>75</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ecom-products/product-service/src/main/java/com/ecommerce/business/db/crudservices/WishlistService.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ecom-security/authentication-server/src/main/java/com/ecommerce/gui/controllers/AuthController.java</url>
+          <line>56</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ecom-security/authentication-server/src/main/java/com/ecommerce/gui/controllers/AuthController.java</url>
+          <line>57</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

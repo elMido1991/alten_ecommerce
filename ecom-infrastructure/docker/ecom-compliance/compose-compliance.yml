@@ -1,0 +1,51 @@
+version: '3.8'
+
+services:
+
+
+  registry-server:
+    image: registry-server:1.0.0
+    environment:
+      - EUREKA_SERVER_URL=http://registry-server:8761/eureka
+    networks:
+      - ecom-network
+    ports:
+      - "8761:8761"
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8761/eureka"]
+      interval: 30s
+      retries: 3
+      start_period: 10s
+      timeout: 10s
+
+
+
+  gateway-router:
+    image: gateway-router:1.0.0
+    depends_on:
+      - registry-server
+    environment:
+      EUREKA_SERVER_URL: http://registry-server:8761/eureka
+    networks:
+      - ecom-network
+    ports:
+      - "8888:8080"
+    restart: unless-stopped
+
+
+  language-server:
+    image: language-server:1.0.0
+    depends_on:
+      - registry-server
+    environment:
+      EUREKA_SERVER_URL: http://registry-server:8761/eureka
+    networks:
+      - ecom-network
+    ports:
+      - "8100:8080"
+    restart: unless-stopped
+
+networks:
+  ecom-network:
+    driver: bridge

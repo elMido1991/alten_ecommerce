@@ -9,10 +9,16 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/authentication-server" />
-            <option value="$PROJECT_DIR$/discovery-server" />
-            <option value="$PROJECT_DIR$/gateway-server" />
-            <option value="$PROJECT_DIR$/product-service" />
+            <option value="$PROJECT_DIR$/ecom-common" />
+            <option value="$PROJECT_DIR$/ecom-compliance" />
+            <option value="$PROJECT_DIR$/ecom-compliance/gateway-router" />
+            <option value="$PROJECT_DIR$/ecom-compliance/language-server" />
+            <option value="$PROJECT_DIR$/ecom-compliance/registry-server" />
+            <option value="$PROJECT_DIR$/ecom-infrastructure" />
+            <option value="$PROJECT_DIR$/ecom-products" />
+            <option value="$PROJECT_DIR$/ecom-products/product-service" />
+            <option value="$PROJECT_DIR$/ecom-security" />
+            <option value="$PROJECT_DIR$/ecom-security/authentication-server" />
           </set>
         </option>
       </GradleProjectSettings>
