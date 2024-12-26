@@ -10,7 +10,8 @@ import java.time.LocalDateTime;
 
 @MappedSuperclass
 @Data
-public class AbstractEntity<ID>{
+public abstract class AbstractEntity<ID>{
+
     private ID id;
 
     @Column(name = "created_at")
@@ -26,5 +27,9 @@ public class AbstractEntity<ID>{
     @PreUpdate
     protected void onUpdate() {
         updatedAt = LocalDateTime.now();
+    }
+
+    public ID getPk(){
+        return id;
     }
 }

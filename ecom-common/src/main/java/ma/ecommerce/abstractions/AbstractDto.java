@@ -1,4 +1,4 @@
 package ma.ecommerce.abstractions;
 
-public class AbstractDto {
+public abstract class AbstractDto {
 }

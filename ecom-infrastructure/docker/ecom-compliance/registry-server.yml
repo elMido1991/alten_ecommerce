@@ -1,0 +1,12 @@
+services:
+  registry-server:
+    image: registry-server:1.0.0
+    environment:
+      - EUREKA_SERVER_URL=http://registry-server:8761/eureka
+    networks:
+      - ecom-network
+    ports:
+      - "8761:8761"
+networks:
+  ecom-network:
+    external: true

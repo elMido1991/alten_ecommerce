@@ -1,17 +1,33 @@
 package ma.ecommerce.exceptions;
 
 import lombok.Getter;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.MessageSource;
-import org.springframework.context.i18n.LocaleContextHolder;
+
+import java.util.Locale;
 
 @Getter
-public abstract class AbstractBusinessException extends RuntimeException {
+public abstract class AbstractBusinessException extends RuntimeException implements Describable {
+
+
+    @Autowired
+    private MessageSource messageSource;
 
     private final String code;
 
-    protected AbstractBusinessException(AbstractExceptionCodes exceptionCodes, MessageSource messageSource) {
-        super(messageSource.getMessage(exceptionCodes.getMessage(), null, LocaleContextHolder.getLocale()));
-        this.code = exceptionCodes.getCode();
+
+    protected AbstractBusinessException(String code) {
+        this.code = code;
+    }
+
+    @Override
+    public String getCode() {
+        return code;
+    }
+
+    @Override
+    public String getDescription() {
+        return messageSource.getMessage(code, null, Locale.ENGLISH);
     }
 
 }

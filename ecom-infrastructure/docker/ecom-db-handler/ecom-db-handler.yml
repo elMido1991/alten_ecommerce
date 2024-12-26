@@ -1,0 +1,18 @@
+services:
+  db-lifecycle-server:
+    image: ecom-db-handler:1.0.0
+    depends_on:
+      - registry-server
+    environment:
+      EUREKA_SERVER_URL: http://registry-server:8761/eureka
+      POSTGRES_DB_SERVER: ecom-db-server
+      POSTGRES_DB_PORT: 5432
+      POSTGRES_DB_NAME: ecom-db
+      POSTGRES_DB_PASSWORD: Policy001
+    networks:
+      - ecom-network
+    ports:
+      - "8200:8080"
+networks:
+  ecom-network:
+    external: true

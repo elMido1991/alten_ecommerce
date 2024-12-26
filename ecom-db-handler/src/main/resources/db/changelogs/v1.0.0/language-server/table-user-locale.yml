@@ -1,0 +1,19 @@
+databaseChangeLog:
+  - changeSet:
+      id: "1"
+      author: "ecom"
+      changes:
+        - createTable:
+            tableName: "user_locale"
+            columns:
+              - column:
+                  name: "user_id"
+                  type: "BIGINT"
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: "locale"
+                  type: "VARCHAR(255)"
+                  constraints:
+                    nullable: false

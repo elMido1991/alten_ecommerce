@@ -1,6 +1,12 @@
 package ma.ecommerce.abstractions;
 
-public class AbstractCrudService<
+import ma.ecommerce.exceptions.EntityNotFoundInDBException;
+import org.springframework.data.domain.Example;
+import org.springframework.data.domain.PageRequest;
+
+import java.util.List;
+
+public abstract class AbstractCrudService<
         REPO extends AbstractCrudRepository<ENTITY, ID>,
         MAPPER extends AbstractMapper<ENTITY, DTO, ID>,
         ENTITY extends AbstractEntity<ID>,
@@ -23,9 +29,25 @@ public class AbstractCrudService<
     }
 
     public DTO update(ID id, DTO dto) {
-        ENTITY entity = repository.findById(id).orElseThrow();
-        entity = mapper.toEntity(dto);
+        ENTITY entity = repository.findById(id).orElseThrow(()->new EntityNotFoundInDBException("ENTITY_NOT_FOUND"));
+        mapper.refreshEntity(entity, dto);
         entity = repository.save(entity);
         return mapper.toDto(entity);
+    }
+
+    public DTO findById(ID id) {
+        ENTITY entity = repository.findById(id).orElseThrow(()->new EntityNotFoundInDBException("ENTITY_NOT_FOUND"));
+        return mapper.toDto(entity);
+    }
+
+    public void delete(ID id) {
+        repository.deleteById(id);
+    }
+
+    public List<DTO> findByPagination(DTO dto, int page, int size) {
+        return repository
+                .findAll(Example.of(mapper.toEntity(dto)), PageRequest.of(page, size))
+                .stream().map(mapper::toDto)
+                .toList();
     }
 }

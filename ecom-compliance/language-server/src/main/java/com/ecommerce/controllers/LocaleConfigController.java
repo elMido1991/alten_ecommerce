@@ -16,18 +16,23 @@ public class LocaleConfigController {
         this.localeService = localeService;
     }
 
-    @GetMapping("/usr/{userId}/locales")
-    public Mono<UserLocale> getLocale(@PathVariable("id") Long idUser) {
+    @GetMapping("/usr/{user_id}/locales")
+    public Mono<UserLocale> getLocale(@PathVariable("user_id") Long idUser) {
         return localeService.getUserLocaleById(idUser);
     }
 
-    @PatchMapping("/usr/{userId}/locales")
-    public Mono<UserLocale> setLocale(@PathVariable("userId") Long userId, @RequestParam("locale") Locale locale) {
+    @PatchMapping("/usr/{user_id}/locales/{user_locale}")
+    public Mono<UserLocale> updateLocale(@PathVariable("user_id") Long userId, @PathVariable("user_locale") Locale locale) {
         return localeService.saveUserLocale(userId, locale);
     }
 
-    @GetMapping("/usr/{userId}/locales/messages")
-    public Mono<String> getMessageResource(@PathVariable("userId") Long userId, @RequestParam("msg_code") String msgCode) {
+    @PostMapping("/usr/{user_id}/locales/{user_locale}")
+    public Mono<UserLocale> createLocale(@PathVariable("user_id") Long userId, @PathVariable("user_locale") Locale locale) {
+        return localeService.saveUserLocale(userId, locale);
+    }
+
+    @GetMapping("/usr/{user_id}/locales/messages")
+    public Mono<String> getMessageResource(@PathVariable("user_id") Long userId, @RequestParam("msg_code") String msgCode) {
         return localeService.getResourceBundle(userId, msgCode);
     }
 }

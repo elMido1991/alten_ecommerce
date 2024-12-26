@@ -9,4 +9,5 @@ include 'ecom-products'
 include 'ecom-products:product-service'
 include 'ecom-common'
 include 'ecom-infrastructure'
+include 'ecom-db-handler'
 

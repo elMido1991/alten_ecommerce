@@ -14,6 +14,7 @@
             <option value="$PROJECT_DIR$/ecom-compliance/gateway-router" />
             <option value="$PROJECT_DIR$/ecom-compliance/language-server" />
             <option value="$PROJECT_DIR$/ecom-compliance/registry-server" />
+            <option value="$PROJECT_DIR$/ecom-db-handler" />
             <option value="$PROJECT_DIR$/ecom-infrastructure" />
             <option value="$PROJECT_DIR$/ecom-products" />
             <option value="$PROJECT_DIR$/ecom-products/product-service" />

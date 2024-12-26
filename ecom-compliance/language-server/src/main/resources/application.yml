@@ -1,11 +1,11 @@
 spring:
   application:
-  r2dbc:
-    url: r2dbc:postgresql://${POSTGRES_DB_SERVER:localhost}:${POSTGRES_DB_PORT:5432}/ecom-db
-    username: ecom
-    password: Policy001
-    driver: postgresql
     name: language-server
+  r2dbc:
+    url: r2dbc:postgresql://${POSTGRES_DB_SERVER:localhost}:${POSTGRES_DB_PORT:5432}/${POSTGRES_DB_NAME:ecom-db}
+    username: ${POSTGRES_DB_USERNAME:ecom}
+    password: ${POSTGRES_DB_PASSWORD:Policy001}
+    driver: postgresql
 eureka:
   client:
     serviceUrl:

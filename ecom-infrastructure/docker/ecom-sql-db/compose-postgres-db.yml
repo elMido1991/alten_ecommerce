@@ -1,10 +1,11 @@
-version: '3.8'
-
 services:
-  postgres:
-    image: postgres:latest
-    container_name: postgres-container
+  ecom-db-server:
+    image: postgres:14.15-alpine3.21
     environment:
+      - POSTGRES_DB_SERVER=ecom-db-server
+      - POSTGRES_DB_PORT=5432
+      - POSTGRES_DB_NAME=ecom-db
+      - POSTGRES_DB_PASSWORD=Policy001
       - POSTGRES_USER=ecom
       - POSTGRES_PASSWORD=Policy001
       - POSTGRES_DB=ecom-db
@@ -20,4 +21,4 @@ volumes:
 
 networks:
   ecom-network:
-    driver: bridge
+    external: true
